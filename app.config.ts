@@ -4,8 +4,13 @@ export default defineAppConfig({
     gray: 'stone',
     landing: {
       section: {
-        title: 'font-glory text-5xl md:text-5xl lg:text-6xl xl:text-7xl',
+        title: 'font-glory text-5xl md:text-5xl lg:text-6xl',
         headline: 'font-merriweather',
+      },
+    },
+    page: {
+      header: {
+        title: 'font-glory tracking-wide text-5xl lg:text-6xl xl:text-7xl',
       },
     },
     button: {

@@ -12,14 +12,14 @@
         Wir verkaufen Blumen, Pflanzen und Zubehör für jeden Anlass.
       </p>
       <UButton
-        label="Jetzt einkaufen"
-        to="/shop"
+        label="Jetzt Kontakt aufnehmen"
+        to="/kontakt"
         variant="solid"
         size="lg"
         class="animate-pulse font-glory tracking-wide font-bold text-xl mx-auto mt-8"
       />
     </div>
     <div />
-    <NuxtImg src="images/hero.webp" alt="hero image" class="w-full h-full object-cover absolute inset-0 z-[-1]" />
+    <NuxtImg loading="eager" preload src="images/hero.webp" alt="hero image" class="w-full h-full object-cover absolute inset-0 z-[-1]" />
   </div>
 </template>

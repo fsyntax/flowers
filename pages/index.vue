@@ -73,6 +73,9 @@ onMounted(() => {
         :ui="{
           wrapper: 'relative',
         }"
+        :links="[
+          { label: 'Unsere Dienstleistungen', to: '/dienstleistungen', size: 'lg' },
+        ]"
       >
         <ULandingGrid
           :ui="{
@@ -91,22 +94,12 @@ onMounted(() => {
                 {{ service.title }}
               </h3>
             </div>
-            <div class="relative mb-4 after:content-[''] after:bg-primary-500/50 lg:after:bg-transparent after:absolute after:-inset-x-3 after:inset-y-20 after:transition after:duration-400 after:z-[-1] group-hover:after:bg-primary-300/50">
-              <NuxtLink to="/">
-                <NuxtImg :src="`https://picsum.photos/60${index}`" alt="" class="w-full h-auto aspect-square" />
-              </NuxtLink>
+            <div class="relative mb-4 after:content-[''] after:bg-primary-500/20  after:absolute after:-inset-x-3 after:inset-y-20 after:transition after:duration-400 after:z-[-1] group-hover:after:bg-primary-300/50">
+              <NuxtImg :src="`https://picsum.photos/60${index}`" alt="" class="w-full h-auto aspect-square" />
             </div>
             <p class="mb-4">
               {{ service.description }}
             </p>
-            <div class="flex w-full">
-              <UButton
-                label="Mehr erfahren"
-                trailing-icon="i-material-symbols-arrow-outward" to="/"
-                size="lg"
-                variant="soft"
-              />
-            </div>
           </div>
         </ULandingGrid>
       </ULandingSection>

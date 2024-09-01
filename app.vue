@@ -30,7 +30,7 @@ useHead({
 
 <style>
 body {
-  @apply font-merriweather;
+  @apply font-merriweather text-dark-500 dark:text-light-500;
 }
 h3 {
   @apply font-glory text-2xl font-bold tracking-wide mb-4
