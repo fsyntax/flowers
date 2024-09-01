@@ -8,6 +8,42 @@ export default defineAppConfig({
         headline: 'font-merriweather',
       },
     },
+    button: {
+      base: 'font-glory font-bold tracking-wide',
+      size: {
+        lg: 'text-lg ',
+      },
+    },
+    input: {
+      default: {
+        size: 'xl',
+      },
+      color: {
+        white: {
+          outline: 'shadow-none ring-primary-500/20',
+        },
+      },
+      variant: {
+        outline: '!shadow-none ring-primary-500/20',
+      },
+      rounded: 'rounded-none',
+    },
+    textarea: {
+      default: {
+        size: 'xl',
+      },
+      color: {
+        white: {
+          outline: 'shadow-none ring-primary-500/20',
+        },
+      },
+      rounded: 'rounded-none',
+    },
+    formGroup: {
+      label: {
+        base: 'font-glory text-lg tracking-wide',
+      },
+    },
     variables: {
       light: {
         background: '254 254 250',

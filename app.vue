@@ -19,6 +19,9 @@ useHead({
   </UMain>
 
   <UFooter>
+    <template #right>
+      <UColorModeToggle />
+    </template>
     <template #left>
       Copyright © {{ new Date().getFullYear() }}
     </template>
@@ -28,5 +31,8 @@ useHead({
 <style>
 body {
   @apply font-merriweather;
+}
+h3 {
+  @apply font-glory text-2xl font-bold tracking-wide mb-4
 }
 </style>

@@ -2,7 +2,12 @@
 export default defineNuxtConfig({
   extends: ['@nuxt/ui-pro'],
 
-  modules: ['@nuxt/eslint', '@nuxt/ui', '@nuxt/image', '@nuxt/content'],
+  modules: [
+    '@nuxt/eslint',
+    '@nuxt/ui',
+    '@nuxt/image',
+    '@nuxt/content',
+  ],
 
   routeRules: {
     // Temporary workaround for prerender regression. see https://github.com/nuxt/nuxt/issues/27490
@@ -32,6 +37,12 @@ export default defineNuxtConfig({
 
   colorMode: {
     preference: 'light',
+  },
+
+  build: {
+    transpile: [
+      'swiper',
+    ],
   },
 
   compatibilityDate: '2024-07-11',
