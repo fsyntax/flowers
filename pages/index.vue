@@ -1,5 +1,5 @@
 <script setup lang="ts">
-const title = 'flowers - Dein Florist in Imaginecity'
+const title = 'Dein Florist in Imaginecity'
 const description = 'Wir verkaufen Blumen, Pflanzen und Zubehör für jeden Anlass.'
 const carouselRef = ref<HTMLElement | null>(null)
 const carouselHover = ref<boolean>(false)
@@ -9,8 +9,6 @@ useSeoMeta({
   description,
   ogTitle: title,
   ogDescription: description,
-  ogImage: 'https://ui-pro-starter.nuxt.dev/social-card.png',
-  twitterImage: 'https://ui-pro-starter.nuxt.dev/social-card.png',
   twitterCard: 'summary_large_image',
 })
 
@@ -143,64 +141,15 @@ onMounted(() => {
       </div>
     </LazyULandingSection>
     <LazyULandingSection
-      headline="Wir sind für Dich da"
-      title="Kontaktiere uns"
-      description="Du hast Fragen zu unseren Produkten oder möchtest ein individuelles Angebot? Wir freuen uns auf Deine Nachricht und melden uns so schnell wie möglich bei Dir."
+      title="Lass uns gemeinsam deine Vision zum Leben erwecken"
+      description="Egal ob du eine Hochzeit planst, ein Firmenevent ausrichtest oder einfach nur dein Zuhause verschönern möchtest – unser Team steht bereit, um deine Ideen mit floraler Kunst zu verwirklichen. Kontaktiere uns noch heute für eine persönliche Beratung und entdecke, wie wir deine Vorstellungen in blühende Realität verwandeln können."
       :ui="{
-        wrapper: 'relative overflow-x-hidden',
+        wrapper: 'bg-primary-500/10',
+        links: 'animate-pulse',
       }"
-    >
-      <NuxtImg src="/flowers-4.webp" alt="flowers" class="w-full max-w-[150px] lg:max-w-[250px] h-auto absolute -top-24 z-[-1] left-0 rotate-[60deg]" />
-      <NuxtImg src="/flowers-5.webp" alt="flowers" class="max-h-[400px] lg:max-h-[500px] w-auto absolute top-[63%] lg:top-1/2 rotate-[-8deg] z-[-2] -right-12" />
-      <div class="grid lg:grid-cols-2 gap-12">
-        <div>
-          <div class="p-5 bg-primary-500/10 lg:p-8">
-            <h3>Besuche uns im Geschäft</h3>
-            <p class="mb-4">
-              Wir freuen uns auf Deinen Besuch in unserem Geschäft in der [Straße, PLZ, Stadt]. Lass Dich von unserer Auswahl inspirieren und finde das perfekte Blumenarrangement für jeden Anlass.
-            </p>
-            <p class="mb-4">
-              Unser Geschäft in [Ort] hat folgende Öffnungszeiten:
-            </p>
-            <ul class="list-disc marker:text-primary-500 pl-5 mb-4">
-              <li>Mo. - Di. von 8:00 - 18:00 Uhr</li>
-              <li>Sa. von 8:00 - 12:00 Uhr</li>
-            </ul>
-            <UButton
-              label="In Google Maps öffnen"
-              to="https://www.google.com/maps/place/Mount+Everest/@27.9881526,86.8860064,14z/data=!3m1!4b1!4m6!3m5!1s0x39e854a215bd9ebd:0x576dcf806abbab2!8m2!3d27.9881206!4d86.9249751!16zL20vMGJsYmQ?entry=ttu&g_ep=EgoyMDI0MDgyOC4wIKXMDSoASAFQAw%3D%3D"
-              :external="true"
-              variant="link"
-              size="lg"
-              target="_blank"
-            />
-            <ul class="mt-4">
-              <li>
-                <a href="mailto:marco@freibergersyntax.dev" class="inline-flex gap-1 items-center text-primary-500 hover:underline transition">
-                  <UIcon name="i-material-symbols-alternate-email-rounded" /> <span>info@flowers.com</span></a>
-              </li>
-              <li>
-                <a href="tel:+49123456789" class="inline-flex gap-1 items-center text-primary-500 hover:underline transition">
-                  <UIcon name="i-material-symbols-call" /><span>+49 123 456 789</span></a>
-              </li>
-            </ul>
-          </div>
-          <NuxtImg src="/shop.webp" alt="Unser Geschäft" class="w-full aspect-[16/9] object-cover" />
-        </div>
-        <div class="z-1 ">
-          <div class="p-8 mb-4 ">
-            <h3 class="mb-4">
-              Schreibe uns eine Nachricht
-            </h3>
-            <p class="mb-4">
-              Wir freuen uns auf Deine Nachricht und melden uns so schnell wie möglich bei Dir.
-            </p>
-          </div>
-          <div class="p-8 ring-1 ring-primary-500/20 bg-background">
-            <ContactForm />
-          </div>
-        </div>
-      </div>
-    </LazyULandingSection>
+      :links="[
+        { label: 'Kontaktiere uns', to: '/kontakt', size: 'lg' },
+      ]"
+    />
   </div>
 </template>

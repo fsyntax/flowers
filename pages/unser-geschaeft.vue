@@ -6,7 +6,9 @@ const items = [
 ]
 useSeoMeta({
   title: 'Wir & Unser Geschäft',
-  description: 'Ein Ort, an dem Blumen Leidenschaft und Kunst vereinen',
+  description: 'Ein Ort, an dem Blumen Leidenschaft und Kunst vereinen.',
+  ogTitle: 'Wir & Unser Geschäft',
+  ogDescription: 'Ein Ort, an dem Blumen Leidenschaft und Kunst vereinen.',
 })
 </script>
 

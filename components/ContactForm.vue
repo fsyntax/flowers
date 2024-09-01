@@ -43,7 +43,7 @@ async function onSubmit(event: FormSubmitEvent<Schema>) {
       <UTextarea v-model="state.message" placeholder="Deine Nachricht bzw. Anfrage" />
     </UFormGroup>
 
-    <UButton type="submit" color="primary" variant="soft" size="lg">
+    <UButton type="submit" color="primary" variant="solid" size="lg">
       Nachricht senden
     </UButton>
   </UForm>

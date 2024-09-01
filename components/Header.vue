@@ -16,6 +16,9 @@ const links = [{
 
 const headerClass = computed(() => {
   if (route.path === '/') {
+    if (y.value > 100) {
+      return 'bg-light-500/80 backdrop-blur-sm border-light-800/20 dark:border-dark-600/20 transition duration-500 font-glory'
+    }
     if (y.value < 100) {
       return 'bg-transparent lg:bg-light-500/80 backdrop-blur-none lg:backdrop-blur-sm border-transparent transition duration-500 font-glory'
     }
@@ -33,7 +36,7 @@ const headerClass = computed(() => {
   >
     <template #logo>
       <span
-        class="font-bold text-3xl tracking-wide transition duration-500 lg:text-primary-500"
+        class="font-normal text-3xl tracking-wide transition duration-500 lg:text-primary-500"
         :class="[
           { 'text-light-500 lg:text-primary-500': route.path === '/' && y < 100 },
         ]"
@@ -54,12 +57,13 @@ const headerClass = computed(() => {
             <NuxtLink
               :to="link.to"
               class="pl-5"
+              @click="menuOpen = false"
             >
               {{ link.label }}
             </NuxtLink>
           </li>
           <li>
-            <NuxtLink to="/kontakt" class="text-xl tracking-wide text-primary-700 transition pl-5  hover:text-primary-500 hover:underline">
+            <NuxtLink to="/kontakt" class="text-xl tracking-wide text-primary-700 transition pl-5  hover:text-primary-500 hover:underline" @click="menuOpen = false">
               Kontakt
               <UIcon name="i-material-symbols-light-arrow-outward" />
             </NuxtLink>
@@ -94,12 +98,12 @@ const headerClass = computed(() => {
           <span class="text-4xl font-bold text-primary-500">flowers</span>
           <ul class="mt-4 flex flex-col gap-5 divide-y divide-light-700">
             <li v-for="link in links" :key="link.to" class="text-lg pt-5 ">
-              <NuxtLink :to="link.to" class="block w-full hover:text-primary-500 tracking-wide text-xl transition hover:underline">
+              <NuxtLink :to="link.to" class="block w-full hover:text-primary-500 tracking-wide text-xl transition hover:underline" @click="menuOpen = false">
                 {{ link.label }}
               </NuxtLink>
             </li>
             <li class="pt-5">
-              <NuxtLink to="/kontakt" class="text-xl tracking-wide text-primary-700 transition hover:text-primary-500 hover:underline">
+              <NuxtLink to="/kontakt" class="text-xl tracking-wide text-primary-700 transition hover:text-primary-500 hover:underline" @click="menuOpen = false">
                 Kontakt
                 <UIcon name="i-material-symbols-light-arrow-outward" />
               </NuxtLink>

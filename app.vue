@@ -15,17 +15,15 @@ useHead({
 <template>
   <Header />
   <UMain>
-    <NuxtPage />
+    <NuxtPage
+      :transition="{
+        name: 'page',
+        mode: 'out-in',
+      }"
+    />
   </UMain>
 
-  <UFooter>
-    <template #right>
-      <UColorModeToggle />
-    </template>
-    <template #left>
-      Copyright © {{ new Date().getFullYear() }}
-    </template>
-  </UFooter>
+  <Footer />
 </template>
 
 <style>
@@ -34,5 +32,15 @@ body {
 }
 h3 {
   @apply font-glory text-2xl font-bold tracking-wide mb-4
+}
+
+.page-enter-active,
+.page-leave-active {
+  transition: all 0.2s;
+}
+
+.page-enter-from,
+.page-leave-to {
+  opacity: 0;
 }
 </style>

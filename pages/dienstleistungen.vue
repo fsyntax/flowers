@@ -1,7 +1,9 @@
 <script setup lang="ts">
 useSeoMeta({
-  title: 'Unsere Floristik-Dienstleistungen',
+  title: 'Unsere Dienstleistungen',
   description: 'Blumen für jeden Anlass – maßgeschneiderte Floristik nach deinen Wünschen',
+  ogTitle: 'Unsere Floristik-Dienstleistungen',
+  ogDescription: 'Blumen für jeden Anlass – maßgeschneiderte Floristik nach deinen Wünschen',
 })
 </script>
 
