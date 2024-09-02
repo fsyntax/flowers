@@ -17,13 +17,13 @@ const links = [{
 const headerClass = computed(() => {
   if (route.path === '/') {
     if (y.value > 100) {
-      return 'bg-light-500/80 backdrop-blur-sm border-light-800/20 dark:border-dark-600/20 transition duration-500 font-glory'
+      return 'bg-light-500/80 backdrop-blur-sm border-light-800/20 dark:border-dark-600/20 transition duration-500 font-glory texture-bg'
     }
     if (y.value < 100) {
       return 'bg-transparent lg:bg-light-500/80 backdrop-blur-none lg:backdrop-blur-sm border-transparent transition duration-500 font-glory'
     }
   }
-  return 'transition bg-light-500/80 backdrop-blur-sm dark:bg-dark-500/20 border-light-800/20 dark:border-dark-600/20 font-glory duration-500'
+  return 'transition bg-light-500/80 backdrop-blur-sm dark:bg-dark-500/20 border-light-800/20 dark:border-dark-600/20 font-glory duration-500 texture-bg'
 })
 </script>
 
@@ -91,7 +91,8 @@ const headerClass = computed(() => {
         :overlay="false"
         :ui="{
           width: 'max-w-[300px]',
-          base: 'border-r border-light-600',
+          base: 'border-r border-light-600 shadow-xl relative',
+          background: 'texture-bg',
         }"
       >
         <div class="px-8 pt-4 font-glory">
@@ -110,6 +111,7 @@ const headerClass = computed(() => {
             </li>
           </ul>
         </div>
+        <NuxtImg src="/images/flowers-13.webp" alt="flowers" class="w-full h-auto max-w-[300px] mx-auto absolute -bottom-2" />
       </USlideover>
     </template>
   </UHeader>

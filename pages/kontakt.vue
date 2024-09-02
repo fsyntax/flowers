@@ -55,7 +55,7 @@ useSeoMeta({
           <NuxtImg src="/shop.webp" alt="Unser Geschäft" class="w-full aspect-[16/9] object-cover" />
         </div>
         <div class="z-1">
-          <div class="p-5 lg:p-8 mb-4 ">
+          <div class="p-5 lg:p-8 mb-4 lg:mb-0">
             <h3 class="mb-4">
               Schreibe uns eine Nachricht
             </h3>

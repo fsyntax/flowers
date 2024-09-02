@@ -28,7 +28,11 @@ useHead({
 
 <style>
 body {
-  @apply font-merriweather text-dark-500 dark:text-light-500;
+  @apply font-merriweather text-dark-500 dark:text-light-500 texture-bg;
+}
+
+.texture-bg {
+  background-image: url("https://www.transparenttextures.com/patterns/groovepaper.png");
 }
 h3 {
   @apply font-glory text-2xl font-bold tracking-wide mb-4

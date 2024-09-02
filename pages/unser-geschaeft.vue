@@ -49,6 +49,9 @@ useSeoMeta({
       headline="Blumen mit Herz – Unsere Leidenschaft für florale Kunst"
       title="Unsere Philosophie"
       description="Blumen sind mehr als nur eine Dekoration – sie sind Ausdruck von Emotionen, kultureller Traditionen und der Natur selbst. Bei [Firmenname] steht die Leidenschaft für Blumen im Mittelpunkt unseres Tuns. Wir glauben, dass jedes Arrangement eine einzigartige Botschaft vermitteln sollte, die genau auf den Anlass und die Persönlichkeit unserer Kunden abgestimmt ist."
+      :ui="{
+        wrapper: 'relative',
+      }"
     >
       <div class="grid lg:grid-cols-2 gap-8 lg:gap-20 items-center">
         <div>
@@ -81,7 +84,7 @@ useSeoMeta({
       title="Entdecke unser Sortiment"
       description="Unser Geschäft bietet eine breite Auswahl an floralen Produkten, die jeden Geschmack und jedes Bedürfnis abdecken. Ob frische Schnittblumen, pflegeleichte Zimmerpflanzen oder stilvolle florale Accessoires – bei uns findest du alles, was dein Herz begehrt."
     >
-      <ULandingGrid>
+      <ULandingGrid class="gap-8 lg:gap-14">
         <div
           v-for="item in items"
           :key="item.name"
@@ -103,8 +106,8 @@ useSeoMeta({
       description="Unser Team besteht aus erfahrenen Floristen, die mit Leidenschaft und Kreativität jede Blume zum Strahlen bringen. Wir arbeiten Hand in Hand, um deine individuellen Wünsche zu erfüllen und dir ein einzigartiges Blumenerlebnis zu bieten."
       align="left"
     >
-      <ULandingGrid class="gap-12">
-        <div class="col-span-4 lg:-translate-y-4">
+      <ULandingGrid class="gap-12 relative">
+        <div class="col-span-4 lg:-translate-y-4 flex flex-col">
           <div class="relative after:content-[''] after:absolute after:z-[-1] after:bg-primary-500/20 after:inset-0 after:-translate-y-3 after:translate-x-3 w-full h-full">
             <NuxtImg src="/images/florist-2.webp" alt="Florist" class="h-full w-full object-cover max-h-[500px]" />
           </div>
@@ -113,7 +116,7 @@ useSeoMeta({
             <span>Inhaber & Meisterflorist</span>
           </div>
         </div>
-        <div class="col-span-4 ">
+        <div class="col-span-4 flex flex-col">
           <div class="relative  after:content-[''] after:absolute after:z-[-1] after:bg-primary-500/20 after:inset-0 after:-translate-y-3 after:translate-x-3 h-full w-full">
             <NuxtImg src="/images/florist-3.webp" alt="Florist" class="h-full w-full object-cover max-h-[500px]" />
           </div>
@@ -122,7 +125,7 @@ useSeoMeta({
             <span>Meisterfloristin & Service</span>
           </div>
         </div>
-        <div class="col-span-4 lg:translate-y-4">
+        <div class="col-span-4 lg:translate-y-4 flex flex-col">
           <div class="relative after:content-[''] after:absolute after:z-[-1] after:bg-primary-500/20 after:inset-0 after:-translate-y-3 after:translate-x-3 w-full h-full">
             <NuxtImg src="/images/florist-1.webp" alt="Florist" class="h-full w-full object-cover max-h-[500px]" />
           </div>

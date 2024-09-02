@@ -110,7 +110,7 @@ onMounted(() => {
         { label: 'Unser Geschäft', to: '/unser-geschaeft', size: 'lg' },
       ]"
       :ui="{
-        wrapper: 'relative overflow-x-hidden',
+        wrapper: 'relative overflow-hidden',
       }"
     >
       <NuxtImg src="/flowers-3.webp" alt="flowers" class="w-full max-w-[250px] lg:max-w-[500px] h-auto absolute top-6 z-[-1] lg:top-12 -right-8 lg:-right-14 rotate-[22deg]" />
@@ -123,6 +123,9 @@ onMounted(() => {
       title="Florale Kunstwerke"
       description="Tauchen Sie ein in die Welt der Blumen und erleben Sie die Vielfalt und Kreativität unserer Arrangements. Jedes Bild erzählt eine Geschichte – von eleganten Hochzeitsbouquets über üppige Eventdekorationen bis hin zu einfühlsamen Trauerarrangements. Lassen Sie sich inspirieren und entdecken Sie, wie wir mit Blumen Momente unvergesslich machen."
       align="left"
+      :ui="{
+        wrapper: 'relative',
+      }"
     >
       <div class="relative after:content-[''] after:absolute after:z-[-1] after:bg-primary-500/20 after:inset-0 after:translate-y-5 after:-translate-x-5">
         <UCarousel
@@ -139,17 +142,8 @@ onMounted(() => {
           <NuxtImg :src="item" alt="Unser Geschäft" class="w-full h-auto" draggable="false" />
         </UCarousel>
       </div>
+      <NuxtImg src="/images/flowers-9.webp" alt="Flowers" class="w-full max-w-[400px] lg:max-w-[500px] h-auto absolute -top-5 z-[-1] lg:top-12 -left-20 lg:-left-14 rotate-[-10deg]" />
     </LazyULandingSection>
-    <LazyULandingSection
-      title="Lass uns gemeinsam deine Vision zum Leben erwecken"
-      description="Egal ob du eine Hochzeit planst, ein Firmenevent ausrichtest oder einfach nur dein Zuhause verschönern möchtest – unser Team steht bereit, um deine Ideen mit floraler Kunst zu verwirklichen. Kontaktiere uns noch heute für eine persönliche Beratung und entdecke, wie wir deine Vorstellungen in blühende Realität verwandeln können."
-      :ui="{
-        wrapper: 'bg-primary-500/10',
-        links: 'animate-pulse',
-      }"
-      :links="[
-        { label: 'Kontaktiere uns', to: '/kontakt', size: 'lg' },
-      ]"
-    />
+    <Banner />
   </div>
 </template>

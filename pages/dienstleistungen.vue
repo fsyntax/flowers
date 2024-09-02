@@ -8,13 +8,13 @@ useSeoMeta({
 </script>
 
 <template>
-  <div>
+  <div class="overflow-hidden">
     <UContainer>
       <UPageHeader
         title="Unsere Floristik-Dienstleistungen"
         description="Blumen für jeden Anlass – maßgeschneiderte Floristik nach deinen Wünschen"
         :ui="{
-          wrapper: 'py-12',
+          wrapper: 'py-12 relative',
         }"
       />
       <div class="relative after:content-[''] after:absolute after:z-[-1] after:bg-primary-500/20 after:inset-0 after:translate-y-5 after:translate-x-5">
@@ -28,7 +28,7 @@ useSeoMeta({
       description="Die Hochzeit ist ein einzigartiges Ereignis, und die Blumen spielen dabei eine zentrale Rolle. Bei uns bekommst du maßgeschneiderte Blumenkreationen, die perfekt zu deinem Stil und deinen Wünschen passen. Unser erfahrenes Team begleitet dich von der ersten Beratung bis zum letzten Feinschliff, um sicherzustellen, dass deine Hochzeit in voller Blütenpracht erstrahlt."
       align="left"
       :ui="{
-        wrapper: 'relative',
+        wrapper: 'relative ',
       }"
       :features="[
         { name: 'Brautsträuße', description: 'Klassisch, modern, boho oder vintage – wir kreieren den perfekten Brautstrauß, der zu dir passt.', icon: 'i-mdi-flower-poppy' },
@@ -46,6 +46,9 @@ useSeoMeta({
       title="Eventfloristik"
       description="Egal, ob du eine Firmenfeier, eine Geburtstagsfeier oder ein Jubiläum planst – wir bieten dir kreative und stilvolle Blumendekorationen, die deine Veranstaltung unvergesslich machen. Unsere Arrangements werden speziell auf das Thema und die Stimmung deines Events abgestimmt."
       align="right"
+      :ui="{
+        wrapper: 'relative ',
+      }"
       :features="[
         { name: 'Firmen- und Geschäftsevents', description: 'Beeindrucke Kunden und Mitarbeiter mit floralen Kunstwerken, die dein Event aufwerten.', icon: 'i-mdi-flower-poppy' },
         { name: 'Privatfeiern', description: 'Schaffe mit unseren Blumenarrangements eine Atmosphäre, die deine Gäste begeistert.', icon: 'i-mdi-flower-poppy' },
@@ -120,16 +123,6 @@ useSeoMeta({
         <NuxtImg src="/images/service-custom.webp" alt="Individuelle Blumenarrangements" class="w-full h-auto" />
       </div>
     </ULandingSection>
-    <ULandingSection
-      title="Lass uns gemeinsam deine Vision zum Leben erwecken"
-      description="Egal ob du eine Hochzeit planst, ein Firmenevent ausrichtest oder einfach nur dein Zuhause verschönern möchtest – unser Team steht bereit, um deine Ideen mit floraler Kunst zu verwirklichen. Kontaktiere uns noch heute für eine persönliche Beratung und entdecke, wie wir deine Vorstellungen in blühende Realität verwandeln können."
-      :ui="{
-        wrapper: 'bg-primary-500/10',
-        links: 'animate-pulse',
-      }"
-      :links="[
-        { label: 'Kontaktiere uns', to: '/kontakt', size: 'lg' },
-      ]"
-    />
+    <Banner />
   </div>
 </template>
