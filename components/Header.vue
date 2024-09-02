@@ -35,12 +35,15 @@ const headerClass = computed(() => {
     }"
   >
     <template #logo>
-      <span
-        class="font-normal text-3xl tracking-wide transition duration-500 lg:text-primary-500"
-        :class="[
-          { 'text-light-500 lg:text-primary-500': route.path === '/' && y < 100 },
-        ]"
-      >flowers</span>
+      <div class="flex items-center gap-1">
+        <NuxtImg src="/flowers_logo.webp" alt="Logo" class="w-10 h-auto" />
+        <span
+          class="font-normal text-3xl tracking-wide transition duration-500 text-primary-700"
+          :class="[
+            { 'text-light-500 lg:text-primary-500': route.path === '/' && y < 100 },
+          ]"
+        >flowers</span>
+      </div>
     </template>
 
     <template #right>
@@ -65,7 +68,7 @@ const headerClass = computed(() => {
           <li>
             <NuxtLink to="/kontakt" class="text-xl tracking-wide text-primary-700 transition pl-5  hover:text-primary-500 hover:underline" @click="menuOpen = false">
               Kontakt
-              <UIcon name="i-material-symbols-light-arrow-outward" />
+              <UIcon name="i-ph-chat-circle-text-fill" />
             </NuxtLink>
           </li>
         </ul>
@@ -95,21 +98,47 @@ const headerClass = computed(() => {
           background: 'texture-bg',
         }"
       >
-        <div class="px-8 pt-4 font-glory">
-          <span class="text-4xl font-bold text-primary-500">flowers</span>
-          <ul class="mt-4 flex flex-col gap-5 divide-y divide-light-700">
-            <li v-for="link in links" :key="link.to" class="text-lg pt-5 ">
-              <NuxtLink :to="link.to" class="block w-full hover:text-primary-500 tracking-wide text-xl transition hover:underline" @click="menuOpen = false">
-                {{ link.label }}
-              </NuxtLink>
-            </li>
-            <li class="pt-5">
-              <NuxtLink to="/kontakt" class="text-xl tracking-wide text-primary-700 transition hover:text-primary-500 hover:underline" @click="menuOpen = false">
-                Kontakt
-                <UIcon name="i-material-symbols-light-arrow-outward" />
-              </NuxtLink>
-            </li>
-          </ul>
+        <div class="px-8 pt-4 font-glory flex flex-col justify-between h-full pb-24">
+          <div>
+            <div class="flex items-center gap-1">
+              <NuxtImg src="/flowers_logo.webp" alt="Logo" class="w-12 h-auto" />
+              <span
+                class="font-normal text-3xl tracking-wide transition duration-500 text-primary-700"
+              >flowers</span>
+            </div>
+            <ul class="mt-4 flex flex-col gap-5 divide-y divide-primary-200">
+              <li v-for="link in links" :key="link.to" class="text-lg pt-5 ">
+                <NuxtLink :to="link.to" class="block w-full hover:text-primary-500 tracking-wide text-xl transition hover:underline" @click="menuOpen = false">
+                  {{ link.label }}
+                </NuxtLink>
+              </li>
+              <li class="pt-5">
+                <NuxtLink to="/kontakt" class="text-xl tracking-wide text-primary-700 transition hover:text-primary-500 hover:underline" @click="menuOpen = false">
+                  Kontakt
+                  <UIcon name="i-ph-chat-circle-text-fill" />
+                </NuxtLink>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <p class="mb-2">
+              Öffnungszeiten:
+            </p>
+            <ul class="list-disc marker:text-primary-500 pl-5 mb-4">
+              <li>Mo. - Di. von 8:00 - 18:00 Uhr</li>
+              <li>Sa. von 8:00 - 12:00 Uhr</li>
+            </ul>
+            <ul class="mt-4">
+              <li>
+                <a href="mailto:marco@freibergersyntax.dev" class="inline-flex gap-1 items-center text-primary-500 hover:underline transition">
+                  <UIcon name="i-material-symbols-alternate-email-rounded" /> <span>info@flowers.com</span></a>
+              </li>
+              <li>
+                <a href="tel:+49123456789" class="inline-flex gap-1 items-center text-primary-500 hover:underline transition">
+                  <UIcon name="i-material-symbols-call" /><span>+49 123 456 789</span></a>
+              </li>
+            </ul>
+          </div>
         </div>
         <NuxtImg src="/images/flowers-13.webp" alt="flowers" class="w-full h-auto max-w-[300px] mx-auto absolute -bottom-2" />
       </USlideover>

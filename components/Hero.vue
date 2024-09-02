@@ -9,10 +9,10 @@
         Dein Florist in Imaginecity
       </h1>
       <p class="text-lg lg:text-xl text-light-500 text-center font-bold">
-        Wir verkaufen Blumen, Pflanzen und Zubehör für jeden Anlass.
+        Entdecke frische Blumenarrangements, prächtige Pflanzen und stilvolles Zubehör. Perfekt für jeden Moment, ob festlich oder alltäglich. Lass dich von der Natur inspirieren!
       </p>
       <UButton
-        label="Jetzt Kontakt aufnehmen"
+        label="Kontakt aufnehmen"
         to="/kontakt"
         variant="solid"
         size="lg"

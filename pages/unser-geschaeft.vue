@@ -26,7 +26,7 @@ useSeoMeta({
         <NuxtImg loading="eager" preload src="/images/unser-geschaeft.webp" alt="Unsere Floristik-Dienstleistungen" class="w-full h-auto my-12 lg:mb-16" />
       </div>
       <p class="mb-8">
-        Willkommen bei [Firmenname], deinem Floristikgeschäft im Herzen von [Stadtname]. Seit unserer Gründung im Jahr [Gründungsjahr] haben wir uns der Kunst verschrieben, mit Blumen Emotionen auszudrücken und Räume zu verschönern. Wir verstehen uns nicht nur als Floristen, sondern als kreative Köpfe, die mit jeder Blume, jedem Blatt und jedem Arrangement eine Geschichte erzählen.
+        Willkommen bei [Firmenname], deinem Floristikgeschäft im Herzen von [Stadtname]. Seit unserer Gründung im Jahr [Gründungsjahr] widmen wir uns mit Leidenschaft der floralen Kunst und der Aufgabe, mit Blumen Emotionen zu wecken und Räume zu verwandeln. Wir sehen uns nicht nur als Floristen, sondern als kreative Künstler, die mit jedem Blumenarrangement, jedem Blatt und jeder Komposition eine einzigartige Geschichte erzählen.
       </p>
       <div class="grid lg:grid-cols-2 gap-8 items-center">
         <div class="bg-primary-500/10 p-5">
@@ -48,7 +48,7 @@ useSeoMeta({
     <ULandingSection
       headline="Blumen mit Herz – Unsere Leidenschaft für florale Kunst"
       title="Unsere Philosophie"
-      description="Blumen sind mehr als nur eine Dekoration – sie sind Ausdruck von Emotionen, kultureller Traditionen und der Natur selbst. Bei [Firmenname] steht die Leidenschaft für Blumen im Mittelpunkt unseres Tuns. Wir glauben, dass jedes Arrangement eine einzigartige Botschaft vermitteln sollte, die genau auf den Anlass und die Persönlichkeit unserer Kunden abgestimmt ist."
+      description="Blumen sind weit mehr als nur Dekoration – sie sind ein Ausdruck von Emotionen, kulturellen Traditionen und der Schönheit der Natur. Bei [Firmenname] steht die Leidenschaft für Blumen im Zentrum unseres Schaffens. Wir glauben daran, dass jedes Arrangement eine besondere Botschaft vermittelt, die perfekt auf den Anlass und die Persönlichkeit unserer Kunden abgestimmt ist."
       :ui="{
         wrapper: 'relative',
       }"
@@ -136,16 +136,6 @@ useSeoMeta({
         </div>
       </ULandingGrid>
     </ULandingSection>
-    <ULandingSection
-      title="Lass uns gemeinsam deine Vision zum Leben erwecken"
-      description="Egal ob du eine Hochzeit planst, ein Firmenevent ausrichtest oder einfach nur dein Zuhause verschönern möchtest – unser Team steht bereit, um deine Ideen mit floraler Kunst zu verwirklichen. Kontaktiere uns noch heute für eine persönliche Beratung und entdecke, wie wir deine Vorstellungen in blühende Realität verwandeln können."
-      :ui="{
-        wrapper: 'bg-primary-500/10',
-        links: 'animate-pulse',
-      }"
-      :links="[
-        { label: 'Kontaktiere uns', to: '/kontakt', size: 'lg' },
-      ]"
-    />
+    <Banner />
   </div>
 </template>

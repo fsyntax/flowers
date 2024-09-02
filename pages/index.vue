@@ -15,22 +15,22 @@ useSeoMeta({
 const services = [
   {
     title: 'Hochzeitsfloristik',
-    description: 'Hochzeitsfloristik für jeden Anlass, ob klassisch oder modern.',
+    description: 'Unvergessliche Blumenarrangements für deine Traumhochzeit – von klassisch elegant bis modern und kreativ.',
     class: 'col-span-12 lg:col-span-3 row-span-2 lg:-translate-y-12',
   },
   {
     title: 'Trauerfloristik',
-    description: 'Trauerfloristik für jeden Anlass, ob klassisch oder modern.',
+    description: 'Würdevolle Blumenarrangements für den Abschied – stilvoll, einfühlsam und individuell auf deine Wünsche abgestimmt.',
     class: 'col-span-12 lg:col-span-3 row-span-2 pt-8 lg:pt-0 lg:-translate-y-6',
   },
   {
     title: 'Eventfloristik',
-    description: 'Eventfloristik für jeden Anlass, ob klassisch oder modern.',
+    description: 'Blumen, die dein Event unvergesslich machen – ob Firmenfeier, Gala oder privates Fest, wir gestalten die passende Atmosphäre.',
     class: 'col-span-12 lg:col-span-3 row-span-2 pt-8 lg:pt-0',
   },
   {
     title: 'Blumenabo',
-    description: 'Blumenabo für jeden Anlass, ob klassisch oder modern.',
+    description: 'Regelmäßig frische Blumen direkt zu dir – mit unserem Blumenabo bringst du das ganze Jahr über natürliche Schönheit in dein Zuhause oder Büro.',
     class: 'col-span-12 lg:col-span-3 row-span-2 pt-8 lg:pt-0 lg:translate-y-6',
   },
 ]
@@ -65,11 +65,12 @@ onMounted(() => {
       <NuxtImg src="/flowers-1.webp" alt="flowers" class="w-full max-w-[200px] lg:max-w-[500px] h-auto absolute top-10 lg:top-36 -left-8 lg:-left-14 rotate-[-22deg]" />
 
       <ULandingSection
-        headline="Wir lieben Blumen"
-        title="Floristik für jeden Anlass"
-        description="Wir verkaufen Blumen, Pflanzen und Zubehör für jeden Anlass."
+        headline="Unsere Floristik-Dienstleistungen"
+        title="Mit Leidenschaft für Blumen – Floristik für jeden Anlass"
+        description="Wir bieten maßgeschneiderte Blumenarrangements, Pflanzen und Zubehör, perfekt abgestimmt auf jeden Moment in deinem Leben."
         :ui="{
           wrapper: 'relative',
+          title: 'max-w-3xl',
         }"
         :links="[
           { label: 'Unsere Dienstleistungen', to: '/dienstleistungen', size: 'lg' },
@@ -103,6 +104,7 @@ onMounted(() => {
       </ULandingSection>
     </div>
     <LazyULandingSection
+      headline="Wir & unser Geschäft"
       title="Ein Ort, an dem Blumen Leidenschaft und Kunst vereinen"
       description="Seit unserer Gründung im Jahr [Gründungsjahr] ist unser Geschäft ein fester Bestandteil der [Stadtname]-Gemeinschaft. Wir verstehen uns nicht nur als Floristen, sondern als Künstler, die mit jeder Blume, jedem Blatt und jedem Arrangement eine Geschichte erzählen."
       align="right"
@@ -121,7 +123,7 @@ onMounted(() => {
     <LazyULandingSection
       headline="Ein Bild sagt mehr als tausend Worte"
       title="Florale Kunstwerke"
-      description="Tauchen Sie ein in die Welt der Blumen und erleben Sie die Vielfalt und Kreativität unserer Arrangements. Jedes Bild erzählt eine Geschichte – von eleganten Hochzeitsbouquets über üppige Eventdekorationen bis hin zu einfühlsamen Trauerarrangements. Lassen Sie sich inspirieren und entdecken Sie, wie wir mit Blumen Momente unvergesslich machen."
+      description="Erlebe die faszinierende Welt der Blumen und lass dich von der Vielfalt und Kreativität unserer floralen Arrangements verzaubern. Jedes Bild in unserem Carousel erzählt eine einzigartige Geschichte – von traumhaften Hochzeitsbouquets über beeindruckende Eventdekorationen bis hin zu berührenden Trauerarrangements. Entdecke, wie wir mit floraler Kunst unvergessliche Momente schaffen."
       align="left"
       :ui="{
         wrapper: 'relative',

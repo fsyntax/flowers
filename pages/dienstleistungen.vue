@@ -12,7 +12,7 @@ useSeoMeta({
     <UContainer>
       <UPageHeader
         title="Unsere Floristik-Dienstleistungen"
-        description="Blumen für jeden Anlass – maßgeschneiderte Floristik nach deinen Wünschen"
+        description="Blumen für jeden Anlass – Floristik, die deine Wünsche erfüllt"
         :ui="{
           wrapper: 'py-12 relative',
         }"
@@ -20,7 +20,7 @@ useSeoMeta({
       <div class="relative after:content-[''] after:absolute after:z-[-1] after:bg-primary-500/20 after:inset-0 after:translate-y-5 after:translate-x-5">
         <NuxtImg loading="eager" preload src="/images/services-header.webp" alt="Unsere Floristik-Dienstleistungen" class="w-full h-auto my-12 lg:mb-16" />
       </div>
-      <p>Bei [Firmenname] bieten wir eine breite Palette von Floristik-Dienstleistungen, die auf deine individuellen Bedürfnisse zugeschnitten sind. Ob es um die Gestaltung eines besonderen Ereignisses, die tägliche Verschönerung deines Zuhauses oder die respektvolle Begleitung eines Trauerfalls geht – wir sind dein verlässlicher Partner für alles, was mit Blumen zu tun hat.</p>
+      <p>Bei [Firmenname] stehen dir umfassende Floristik-Dienstleistungen zur Verfügung, individuell auf deine Wünsche zugeschnitten. Ob es darum geht, ein besonderes Ereignis zu verschönern, dein Zuhause täglich zu beleben oder in schweren Zeiten Trost zu spenden – wir sind dein vertrauensvoller Partner für alles, was mit Blumen zu tun hat.</p>
     </UContainer>
     <ULandingSection
       headline="Für den schönsten Tag deines Lebens"
