@@ -100,7 +100,7 @@ const headerClass = computed(() => {
       >
         <div class="px-8 pt-4 font-glory flex flex-col justify-between h-full pb-24">
           <div>
-            <NuxtLink to="/" class="flex items-center gap-1" @click="menuOpen = false">
+            <NuxtLink to="/" class="flex items-center gap-1 focus:outline-none" @click="menuOpen = false">
               <NuxtImg src="/flowers_logo.webp" alt="Logo" class="w-12 h-auto" />
               <span
                 class="font-normal text-3xl tracking-wide transition duration-500 text-primary-700"
