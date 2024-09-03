@@ -20,6 +20,8 @@ useSeoMeta({
         description="Ein Ort, an dem Blumen Leidenschaft und Kunst vereinen"
         :ui="{
           wrapper: 'py-12',
+          container: 'text-center lg:justify-center',
+          description: 'text-center',
         }"
       />
       <div class="relative after:content-[''] after:absolute after:z-[-1] after:bg-primary-500/20 after:inset-0 after:translate-y-5 after:translate-x-5">

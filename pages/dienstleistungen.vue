@@ -11,10 +11,12 @@ useSeoMeta({
   <div class="overflow-hidden">
     <UContainer>
       <UPageHeader
-        title="Unsere Floristik-Dienstleistungen"
+        title="Unsere Floristik Dienstleistungen"
         description="Blumen für jeden Anlass – Floristik, die deine Wünsche erfüllt"
         :ui="{
           wrapper: 'py-12 relative',
+          container: 'text-center lg:justify-center',
+          description: 'text-center',
         }"
       />
       <div class="relative after:content-[''] after:absolute after:z-[-1] after:bg-primary-500/20 after:inset-0 after:translate-y-5 after:translate-x-5">

@@ -83,7 +83,7 @@ onMounted(() => {
           title: 'max-w-3xl',
         }"
         :links="[
-          { label: 'Unsere Dienstleistungen', to: '/dienstleistungen', size: 'lg' },
+          { label: 'Dienstleistungen ansehen', to: '/dienstleistungen', size: 'lg' },
         ]"
       >
         <ULandingGrid

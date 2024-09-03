@@ -21,10 +21,12 @@ const links = [
     }"
   >
     <template #left>
-      <div class="flex flex-col lg:flex-row lg:items-center gap-3 lg:divide-x lg:divide-dark-500">
-        <div>
+      <div class="flex flex-col items-center lg:flex-row lg:items-center gap-3 lg:divide-x lg:divide-dark-500">
+        <div class="flex items-center gap-1">
+          <NuxtImg src="/flowers_logo.webp" alt="Logo" class="w-10 h-auto" />
           <span class="font-glory text-2xl">flowers</span> © {{ new Date().getFullYear() }}
         </div>
+
         <div class="text-xs lg:pl-4 lg:pt-1">
           Made with 💚 by <a class="text-primary-500 underline" href="https://freibergersyntax.dev" target="_blank">Marco</a>
         </div>

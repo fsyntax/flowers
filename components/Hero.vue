@@ -20,6 +20,7 @@
       />
     </div>
     <div />
-    <NuxtImg loading="eager" preload src="images/hero.webp" alt="hero image" class="w-full h-full object-cover absolute inset-0 z-[-1]" />
+    <NuxtImg loading="eager" preload src="images/hero.webp" alt="hero image" class="hidden lg:block w-full h-full object-cover absolute inset-0 z-[-1]" />
+    <NuxtImg loading="eager" preload src="images/hero-mobile.webp" alt="hero image" class="lg:hidden w-full h-full object-cover absolute inset-0 z-[-1]" />
   </div>
 </template>

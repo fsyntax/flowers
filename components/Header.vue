@@ -30,7 +30,7 @@ const headerClass = computed(() => {
 <template>
   <UHeader
     :ui="{
-      wrapper: headerClass,
+      wrapper: headerClass += ' lg:py-2',
       logo: 'font-glory',
     }"
   >
@@ -40,7 +40,7 @@ const headerClass = computed(() => {
         <span
           class="font-normal text-3xl tracking-wide transition duration-500 text-primary-700"
           :class="[
-            { 'text-light-500 lg:text-primary-500': route.path === '/' && y < 100 },
+            { '!text-light-500 lg:!text-primary-500': route.path === '/' && y < 100 },
           ]"
         >flowers</span>
       </div>
@@ -100,12 +100,12 @@ const headerClass = computed(() => {
       >
         <div class="px-8 pt-4 font-glory flex flex-col justify-between h-full pb-24">
           <div>
-            <div class="flex items-center gap-1">
+            <NuxtLink to="/" class="flex items-center gap-1" @click="menuOpen = false">
               <NuxtImg src="/flowers_logo.webp" alt="Logo" class="w-12 h-auto" />
               <span
                 class="font-normal text-3xl tracking-wide transition duration-500 text-primary-700"
               >flowers</span>
-            </div>
+            </NuxtLink>
             <ul class="mt-4 flex flex-col gap-5 divide-y divide-primary-200">
               <li v-for="link in links" :key="link.to" class="text-lg pt-5 ">
                 <NuxtLink :to="link.to" class="block w-full hover:text-primary-500 tracking-wide text-xl transition hover:underline focus:outline-none" @click="menuOpen = false">
@@ -128,7 +128,7 @@ const headerClass = computed(() => {
               <li>Mo. - Di. von 8:00 - 18:00 Uhr</li>
               <li>Sa. von 8:00 - 12:00 Uhr</li>
             </ul>
-            <ul class="mt-4">
+            <ul class="my-4">
               <li>
                 <a href="mailto:marco@freibergersyntax.dev" class="inline-flex gap-1 items-center text-primary-500 hover:underline transition">
                   <UIcon name="i-material-symbols-alternate-email-rounded" /> <span>info@flowers.com</span></a>
@@ -138,6 +138,10 @@ const headerClass = computed(() => {
                   <UIcon name="i-material-symbols-call" /><span>+49 123 456 789</span></a>
               </li>
             </ul>
+            <div class="flex items-center gap-1">
+              <UButton icon="i-simple-icons-facebook" color="gray" variant="ghost" to="https://facebook.com" target="_blank" />
+              <UButton icon="i-simple-icons-instagram" color="gray" variant="ghost" to="https://instagram.com" target="_blank" />
+            </div>
           </div>
         </div>
         <NuxtImg src="/images/flowers-13.webp" alt="flowers" class="w-full h-auto max-w-[300px] mx-auto absolute -bottom-2" />

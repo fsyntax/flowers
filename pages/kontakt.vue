@@ -10,12 +10,14 @@ useSeoMeta({
 
 <template>
   <div>
-    <UContainer class="overflow-x-hidden z-0">
+    <UContainer class="overflow-x-hidden z-0 pb-12 lg:pb-24">
       <UPageHeader
         title="Kontaktiere uns"
-        description="Du hast Fragen zu unseren Produkten oder möchtest ein individuelles Angebot? Wir freuen uns auf Deine Nachricht und melden uns so schnell wie möglich bei Dir."
+        description="Wir freuen uns auf Deine Nachricht und melden uns so schnell wie möglich bei Dir."
         :ui="{
           wrapper: 'py-12 relative',
+          container: 'text-center lg:justify-center',
+          description: 'text-center',
         }"
       />
 
@@ -68,15 +70,6 @@ useSeoMeta({
           </div>
         </div>
       </div>
-
-      <!--      <NuxtImg src="/flowers-5.webp" alt="flowers" class="max-h-[400px] lg:max-h-[500px] w-auto absolute top-[60%] lg:top-1/2 rotate-[-8deg] z-[-1] -right-12" /> -->
     </UContainer>
-    <ULandingSection
-
-      :ui="{
-        wrapper: 'relative overflow-x-hidden',
-        description: 'max-w-5xl',
-      }"
-    />
   </div>
 </template>
