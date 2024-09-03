@@ -6,7 +6,7 @@
   <div class="relative min-h-screen lg:min-h-[70vh]">
     <div class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-[350px] lg:max-w-[600px] flex flex-col gap-4">
       <h1 class="text-6xl lg:text-7xl xl:text-[6rem] font-bold text-light-500 font-glory text-center mb-8">
-        Dein Florist in Imaginecity
+        Dein Florist in [Ort]
       </h1>
       <p class="text-lg lg:text-xl text-light-500 text-center font-bold">
         Entdecke frische Blumenarrangements, prächtige Pflanzen und stilvolles Zubehör. Perfekt für jeden Moment, ob festlich oder alltäglich. Lass dich von der Natur inspirieren!

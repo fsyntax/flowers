@@ -1,5 +1,5 @@
 <script setup lang="ts">
-const title = 'Dein Florist in Imaginecity'
+const title = 'Dein Florist in [Ort]'
 const description = 'Wir verkaufen Blumen, Pflanzen und Zubehör für jeden Anlass.'
 const carouselRef = ref<HTMLElement | null>(null)
 const carouselHover = ref<boolean>(false)
@@ -17,31 +17,41 @@ const services = [
     title: 'Hochzeitsfloristik',
     description: 'Unvergessliche Blumenarrangements für deine Traumhochzeit – von klassisch elegant bis modern und kreativ.',
     class: 'col-span-12 lg:col-span-3 row-span-2 lg:-translate-y-12',
+    image: '/images/home-service-wedding.webp',
+    alt: 'Hochzeitsfloristik',
   },
   {
     title: 'Trauerfloristik',
     description: 'Würdevolle Blumenarrangements für den Abschied – stilvoll, einfühlsam und individuell auf deine Wünsche abgestimmt.',
     class: 'col-span-12 lg:col-span-3 row-span-2 pt-8 lg:pt-0 lg:-translate-y-6',
+    image: '/images/home-service-funeral.webp',
+    alt: 'Trauerfloristik',
   },
   {
     title: 'Eventfloristik',
     description: 'Blumen, die dein Event unvergesslich machen – ob Firmenfeier, Gala oder privates Fest, wir gestalten die passende Atmosphäre.',
     class: 'col-span-12 lg:col-span-3 row-span-2 pt-8 lg:pt-0',
+    image: '/images/home-service-events.webp',
+    alt: 'Eventfloristik',
   },
   {
     title: 'Blumenabo',
     description: 'Regelmäßig frische Blumen direkt zu dir – mit unserem Blumenabo bringst du das ganze Jahr über natürliche Schönheit in dein Zuhause oder Büro.',
     class: 'col-span-12 lg:col-span-3 row-span-2 pt-8 lg:pt-0 lg:translate-y-6',
+    image: '/images/home-service-subscription.webp',
+    alt: 'Blumenabo',
   },
 ]
 
 const images = [
-  'https://picsum.photos/600?random=1',
-  'https://picsum.photos/600?random=2',
-  'https://picsum.photos/600?random=3',
-  'https://picsum.photos/600?random=4',
-  'https://picsum.photos/600?random=5',
-  'https://picsum.photos/600?random=6',
+  '/images/slider-1.webp',
+  '/images/slider-2.webp',
+  '/images/slider-3.webp',
+  '/images/slider-4.webp',
+  '/images/slider-5.webp',
+  '/images/slider-6.webp',
+  '/images/slider-7.webp',
+  '/images/slider-8.webp',
 ]
 
 onMounted(() => {
@@ -94,7 +104,7 @@ onMounted(() => {
               </h3>
             </div>
             <div class="relative mb-4 after:content-[''] after:bg-primary-500/20  after:absolute after:-inset-x-3 after:inset-y-20 after:transition after:duration-400 after:z-[-1] group-hover:after:bg-primary-300/50">
-              <NuxtImg :src="`https://picsum.photos/60${index}`" alt="" class="w-full h-auto aspect-square" />
+              <NuxtImg :src="service.image" :alt="service.alt" class="w-full h-auto aspect-square" />
             </div>
             <p class="mb-4">
               {{ service.description }}

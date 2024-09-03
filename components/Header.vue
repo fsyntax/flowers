@@ -108,7 +108,7 @@ const headerClass = computed(() => {
             </div>
             <ul class="mt-4 flex flex-col gap-5 divide-y divide-primary-200">
               <li v-for="link in links" :key="link.to" class="text-lg pt-5 ">
-                <NuxtLink :to="link.to" class="block w-full hover:text-primary-500 tracking-wide text-xl transition hover:underline" @click="menuOpen = false">
+                <NuxtLink :to="link.to" class="block w-full hover:text-primary-500 tracking-wide text-xl transition hover:underline focus:outline-none" @click="menuOpen = false">
                   {{ link.label }}
                 </NuxtLink>
               </li>
